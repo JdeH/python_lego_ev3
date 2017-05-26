@@ -4,15 +4,18 @@ import time as tm
 
 import ev3dev.ev3 as e3
 
+e3.Leds.all_off ()
+
+button = e3.Button ()
+touch = e3.TouchSensor ('in1')
 motor = e3.LargeMotor ('outA')
-button = e3.TouchSensor ('in1')
 
 startTime = 0
 
 while True:
     currentTime = tm.time ()
     
-    if button.value ():    
+    if touch.value ():    
         startTime = currentTime
         
     if currentTime - startTime < 3:  
@@ -21,5 +24,8 @@ while True:
     else:
         e3.Leds.set_color (e3.Leds.LEFT, e3.Leds.GREEN)
         motor.reset ()
+        
+    if button.enter:
+        break
         
     tm.sleep (0.1)
