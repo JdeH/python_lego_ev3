@@ -26,5 +26,5 @@ tailTexts = [
     'Blijf van mijn staart af of ik bijt in je kuiten! Grrrrr! Wraf! Wraf!',
     'Nee, niet aankomen, mijn kop zit aan de andere kant! Kef! Kef! Kef!',
     'Blijf van mijn lijf, naar mens! Waf! Aoooooo! Aoooooo!',
-    'Nee, nee, nee, niet aan mijn staart! Waf! Waf! Woef!',
+    'Nee, nee, nee, niet aan mijn staart! Waf! Waf! Woef!'
 ]
